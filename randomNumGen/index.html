@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS code -->
+    <style>
+      h1 {
+        text-align: center;
+      }
+      #rolbtn {
+        display: block;
+        margin: 0 auto;
+        height: 10vh;
+        width: 15vw;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 8%;
+        background-color: rgb(185, 141, 82);
+        cursor: pointer;
+      }
+      #rolres {
+        text-align: center;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Random Number Generator</h1>
+    <button id="rolbtn">Roll</button>
+    <p id="rolres"></p>
+    <!-- javascript code -->
+    <script>
+      let rolbtn = document.getElementById("rolbtn");
+      let rolres = document.getElementById("rolres");
+      let min = 1;
+      let max = 6;
+      rolbtn.onclick = function () {
+        let randomNum = Math.floor(Math.random() * max) + min;
+        rolres.textContent = randomNum;
+      };
+    </script>
+  </body>
+</html>

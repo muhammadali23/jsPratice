@@ -19,5 +19,20 @@ document.getElementById("btn").onclick = function () {
 
 //_____________________________________
 //|                                 |
-//|counter application              |
+//|Math function in js              |
 //|_________________________________|___
+
+console.log(Math.PI);
+console.log(Math.E);
+
+let a = -3.22;
+let b = 2;
+let z;
+
+// z = Math.round(a); // 3
+// z = Math.floor(a); // 3
+// z = Math.ceil(a);  // 4
+// z = Math.trunc(a); // 3
+// z = Math.abs(a);
+
+// console.log(Math);
