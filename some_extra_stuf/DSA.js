@@ -84,4 +84,26 @@ function mergeArray(arr1, arr2) {
 
 let arr11 = [1, 2, 3, 4, 4];
 let arr12 = [2, 4, 5, 5];
-console.log(mergeArray(arr11, arr12));
+// console.log(mergeArray(arr11, arr12));
+
+function calculateProductsExceptAtIndex(arr) {
+  const result = [];
+  const n = arr.length;
+
+  for (let i = 0; i < n; i++) {
+    let product = 1;
+    for (let j = 0; j < n; j++) {
+      if (i !== j) {
+        product *= arr[j];
+      }
+    }
+    result.push(product);
+  }
+
+  return result;
+}
+
+// Example usage:
+const array = [1, 2, 3, 4, 5];
+const result = calculateProductsExceptAtIndex(array);
+console.log(result);
