@@ -106,4 +106,14 @@ function calculateProductsExceptAtIndex(arr) {
 // Example usage:
 const array = [1, 2, 3, 4, 5];
 const result = calculateProductsExceptAtIndex(array);
-console.log(result);
+// console.loclsg(result);
+
+// write a program when i pass 4 it return 5 and when I pass 5 it return 4 without using if-else or for loop
+
+function swapNumbers(num) {
+  return num + 1 - 2 * (num % 2);
+}
+
+// Test cases
+console.log(swapNumbers(8)); // Output: 5
+console.log(swapNumbers(6)); // Output: 4
